@@ -2,7 +2,7 @@
 # IvansStore
 
 Angular project for Ivans Pizzaria. 
-This project was created for technical interview with saphe.dk
+This project was created for technical interview with [saphe.dk](https://saphe.dk)
 
 The specifications for this project were as follows:
 
