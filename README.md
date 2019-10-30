@@ -1,3 +1,4 @@
+![image](https://repository-images.githubusercontent.com/217312457/a8407080-fb58-11e9-808a-1c9632dd874a)
 # IvansStore
 
 Angular project for Ivans Pizzaria. 
