@@ -1,0 +1,16 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" (click)="toggleCart()"
+      [ngClass]="{'is-active': showCart}" data-target="cart">
+      <span class="icon ">
+        <i class="fas fa-shopping-cart" *ngIf="!showBadge"></i>
+        <i class="fas fa-shopping-cart has-badge-rounded has-badge-success" *ngIf="showBadge" [attr.data-badge]="number"></i>
+      </span>
+    </a>
+  </div>
+
+  <div id="cart" class="navbar-menu is-hidden-desktop" [ngClass]="{'is-active': showCart}">
+    <app-cart></app-cart>
+  </div>
+</nav>
+

@@ -1,0 +1,25 @@
+<div class="notification is-primary cart">
+  <div class="notification is-danger" *ngIf="cart.errorMsg">
+    <button class="delete" (click)="removeErrorMsg()"></button>
+    <p class="is-size-4"> {{ cart.errorMsg }} </p>
+  </div>
+  <div class="column is-scrollable">
+    <ul>
+      <li *ngFor="let item of cart.items">
+        <app-cart-item [item]="item"></app-cart-item>
+      </li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <div class="column">
+      <p class="is-size-3 has-text-left">Total Amount: </p>
+    </div>
+    <div class="column">
+      <p class="is-size-3 has-text-right">{{ cart.totalAmount }} Kr</p>
+    </div>
+  </div>
+  <button class="button is-success is-fullwidth is-rounded is-size-5">
+    Order
+  </button>
+</div>

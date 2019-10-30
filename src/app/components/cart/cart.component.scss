@@ -1,0 +1,13 @@
+.cart {
+  min-height : 60vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.is-scrollable {
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+}
+

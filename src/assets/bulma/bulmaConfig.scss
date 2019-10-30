@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Italianno&display=swap');
+
+// Brand Colors
+$Red: #C03221;
+$White: #F7F7FF;
+$Tuscan: #F2D0A4;
+$Black: #545E75;
+$Green: #3F826D;
+
+// Change Primary Colors
+$primary: $White;
+$success: $Green;
+$danger: $Red;
+$text: $Black;
+
+$title-color: $Black;
+
+// Background color
+$body-background-color: $Tuscan;
+$pre-background: $Tuscan;
+$background: $Tuscan;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Italianno', cursive;
+
+
+// Footer
+$footer-padding: 1rem;
+$footer-background-color: $Tuscan;
+
+// notification
+$notification-padding: 1.25rem 2.5rem 1.25rem;
+
+
+// Import bulma after settings variables.
+@import "../../../node_modules/bulma/bulma.sass";
+@import "../../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../../node_modules/bulma/sass/base/_all.sass";
+@import "../../../node_modules/bulma/sass/elements/_all.sass";
+@import "../../../node_modules/bulma/sass/form/_all.sass";
+@import "../../../node_modules/bulma/sass/components/_all.sass";
+@import "../../../node_modules/bulma/sass/layout/_all.sass";
+
+// Bulma Extentions
+@import "../../../node_modules/bulma-badge/dist/css/bulma-badge.sass";

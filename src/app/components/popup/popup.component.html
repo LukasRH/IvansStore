@@ -1,0 +1,18 @@
+<div class="modal" [ngClass]="{'is-active': popup.show}">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+      <div class="card">
+          <div class="card-content" *ngIf="popup.pizza">
+            <div class="content">
+              <p class="is-size-3 has-text-weight-bold is-paddingless is-marginless">Add {{ popup.pizza.name }} to your cart? </p>
+              <p class="is-size-3 is-paddingless is-marginless">Price: {{ popup.pizza.price }} </p>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a class="card-footer-item is-size-4 has-text-weight-bold" (click)="addToCart()">Add to cart</a>
+            <a class="card-footer-item is-size-4 has-text-weight-bold" (click)="popup.showPopUp(false)">Cancel</a>
+          </footer>
+        </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
